@@ -1,7 +1,34 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, type SVGProps } from 'react'
 import { ArrowDown, ArrowUpRight, BriefcaseBusiness, Droplets, HeartHandshake, Landmark, Menu, Scale, ShieldCheck, Sparkles, Stethoscope, X } from 'lucide-react'
+
+function Instagram(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <rect x={2} y={2} width={20} height={20} rx={5} ry={5} />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1={17.5} y1={6.5} x2={17.51} y2={6.5} />
+    </svg>
+  )
+}
+
+function Facebook(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+    </svg>
+  )
+}
+
+function Youtube(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+      <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+    </svg>
+  )
+}
 
 const images = {
   hero: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/749714053_18017948759884732_2203298396947157402_n-FPDs2oozCwMmxzaaNutsRgv7euxSXy.jpg',
@@ -53,7 +80,7 @@ export default function Page() {
 
   return (
     <main className="campaign-shell">
-      <header className="site-header"><a className="brand" href="#inicio" aria-label="Ir para o início"><img className="brand-logo" src="/logo/marcos-adriano-branca.png" alt="Dr. Marcos Adriano Deputado Estadual 12999" width={899} height={331} decoding="async" /></a><button type="button" className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}>{menuOpen ? <X /> : <Menu />}</button><nav className={menuOpen ? 'main-nav is-open' : 'main-nav'}><a href="#historia" onClick={closeMenu}>História</a><a href="#linha-do-tempo" onClick={closeMenu}>Trajetória</a><a href="#bandeiras" onClick={closeMenu}>Bandeiras</a><a className="nav-cta" href="#apoie" onClick={closeMenu}>Faça parte <ArrowUpRight data-icon="inline-end" /></a></nav></header>
+      <header className="site-header"><div className="header-inner"><a className="brand" href="#inicio" aria-label="Ir para o início"><img className="brand-logo" src="/logo/marcos-adriano-branca.png" alt="Dr. Marcos Adriano Deputado Estadual 12999" width={899} height={331} decoding="async" /></a><button type="button" className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}>{menuOpen ? <X /> : <Menu />}</button><nav className={menuOpen ? 'main-nav is-open' : 'main-nav'}><a href="#historia" onClick={closeMenu}>História</a><a href="#linha-do-tempo" onClick={closeMenu}>Trajetória</a><a href="#bandeiras" onClick={closeMenu}>Bandeiras</a><a className="nav-cta" href="#apoie" onClick={closeMenu}>Faça parte <ArrowUpRight data-icon="inline-end" /></a></nav></div></header>
 
       <section id="inicio" className="hero-section reveal-section"><div className="hero-grid-lines" aria-hidden="true" /><div className="hero-copy reveal"><p className="eyebrow">PDT · Deputado estadual · Bahia</p><h1>Uma história<br /><em>que não para.</em></h1><p className="hero-lede">Do Guarani para toda a Bahia. Advogado, técnico contábil e ex-procurador municipal — 20 anos cobrando resultado de dentro da gestão pública.</p><div className="hero-actions"><a href="#historia" className="button button-yellow">Conheça a história <ArrowDown data-icon="inline-end" /></a><a href="#apoie" className="text-link">Aproxime-se</a></div></div><div className="hero-visual reveal"><div className="hero-sun" /><div className="hero-green" /><img src={images.hero} alt="Marcos Adriano sorrindo com terno azul-marinho" loading="eager" decoding="async" fetchPriority="high" /><div className="hero-tag">DR.<br /><strong>MARCOS</strong><br /><small>ADRIANO</small></div></div><div className="hero-number"><small>número</small><strong>12999</strong></div><div className="hero-ribbon" aria-label="Trabalho que aproxima. Conquista merece mais. Número 12999."><div className="hero-ribbon-track"><span>TRABALHO QUE APROXIMA&nbsp;&nbsp;×&nbsp;&nbsp; CONQUISTA MERECE MAIS&nbsp;&nbsp;×&nbsp;&nbsp; 12999&nbsp;&nbsp;×&nbsp;&nbsp;</span><span aria-hidden="true">TRABALHO QUE APROXIMA&nbsp;&nbsp;×&nbsp;&nbsp; CONQUISTA MERECE MAIS&nbsp;&nbsp;×&nbsp;&nbsp; 12999&nbsp;&nbsp;×&nbsp;&nbsp;</span></div></div></section>
 
@@ -74,7 +101,7 @@ export default function Page() {
 
       <div className={`sticky-cta${showSticky && !menuOpen ? ' is-visible' : ''}`} aria-hidden={!showSticky || menuOpen}><a className="button button-yellow" href="#apoie">Quero fazer parte <ArrowUpRight data-icon="inline-end" /></a></div>
 
-      <footer className="site-footer"><div className="footer-brand"><span className="brand-mark">M</span><div><strong>Marcos Adriano</strong><small>Deputado estadual · 12999</small></div></div><div className="footer-links"><a href="#inicio">Início</a><a href="#historia">História</a><a href="#apoie">Contato</a></div><div className="footer-social" aria-label="Redes sociais"><strong className="social-cta">Siga e acompanhe de perto</strong><div className="social-links"><a href="https://www.instagram.com/drmarcosadrianoo/" target="_blank" rel="noreferrer" aria-label="Seguir Marcos Adriano no Instagram"><ArrowUpRight aria-hidden="true" /><span>Instagram</span></a><a href="https://www.facebook.com/dr.marcos70/" target="_blank" rel="noreferrer" aria-label="Acompanhar Marcos Adriano no Facebook"><ArrowUpRight aria-hidden="true" /><span>Facebook</span></a></div></div><div className="footer-legal">Material sujeito à legislação eleitoral vigente.<br />CNPJ e demais informações legais serão inseridos pela equipe responsável.</div><p className="copyright">© 2026 Marcos Adriano · PDT</p></footer>
+      <footer className="site-footer"><div className="footer-brand"><span className="brand-mark">M</span><div><strong>Marcos Adriano</strong><small>Deputado estadual · 12999</small></div></div><div className="footer-links"><a href="#inicio">Início</a><a href="#historia">História</a><a href="#apoie">Contato</a></div><div className="footer-social" aria-label="Redes sociais"><strong className="social-cta">Siga e acompanhe de perto</strong><div className="social-links"><a href="https://www.instagram.com/drmarcosadrianoo/" target="_blank" rel="noreferrer" aria-label="Seguir Marcos Adriano no Instagram"><Instagram aria-hidden="true" /><span>Instagram</span></a><a href="https://www.facebook.com/dr.marcos70/" target="_blank" rel="noreferrer" aria-label="Acompanhar Marcos Adriano no Facebook"><Facebook aria-hidden="true" /><span>Facebook</span></a><span className="social-link-pending" aria-label="Canal do YouTube em breve" title="Canal do YouTube em breve"><Youtube aria-hidden="true" /><span>YouTube</span></span></div></div><div className="footer-legal">Material sujeito à legislação eleitoral vigente.<br />CNPJ e demais informações legais serão inseridos pela equipe responsável.</div><p className="copyright">© 2026 Marcos Adriano · PDT</p></footer>
     </main>
   )
 }
