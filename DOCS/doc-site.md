@@ -8,7 +8,7 @@ Aos 16 anos, iniciou sua formação na área contábil, caminho que mais tarde s
 
 É casado com Ana, advogada, e pai de três filhos.
 
-Ao longo de sua vida profissional, Marcos construiu uma sólida experiência jurídica e em gestão pública, com atuação em 47 municípios do interior da Bahia. Essa trajetória lhe permitiu conhecer de perto diferentes realidades, os desafios enfrentados pelas cidades e, principalmente, as dificuldades vividas diariamente pela população.
+Ao longo de sua vida profissional, Marcos construiu uma sólida experiência jurídica e em gestão pública, com atuação em mais de 40 prefeituras do interior da Bahia. Essa trajetória lhe permitiu conhecer de perto diferentes realidades, os desafios enfrentados pelas cidades e, principalmente, as dificuldades vividas diariamente pela população.
 
 Uma trajetória de defesa das pessoas
 
@@ -28,7 +28,7 @@ Em 2024, Marcos Adriano disputou sua primeira eleição, como candidato a prefei
 
 A eleição terminou, mas sua atuação não. Marcos continuou presente na vida pública de Vitória da Conquista, fiscalizando a administração municipal, cobrando soluções, apontando problemas e defendendo os interesses e os direitos da população.
 
-Hoje, reúne mais de 20 anos de experiência profissional, a vivência adquirida em 47 municípios baianos e uma trajetória de defesa de direitos para continuar lutando pelas pessoas e por uma Vitória da Conquista com melhores serviços públicos, mais oportunidades, desenvolvimento e respeito com quem vive e trabalha na cidade.
+Hoje, reúne mais de 20 anos de experiência profissional, a vivência adquirida em mais de 40 prefeituras baianas e uma trajetória de defesa de direitos para continuar lutando pelas pessoas e por uma Vitória da Conquista com melhores serviços públicos, mais oportunidades, desenvolvimento e respeito com quem vive e trabalha na cidade.
 
 É com essa história, construída pelo trabalho, pela experiência e pela defesa das pessoas, que Marcos acredita que Vitória da Conquista pode e merece avançar muito mais.
 

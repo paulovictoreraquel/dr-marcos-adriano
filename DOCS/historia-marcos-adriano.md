@@ -13,7 +13,7 @@ Documento de referência factual para o [agent-copy](../AGENTS/agent-copy.md) (e
 - **Naturalidade**: Vitória da Conquista (BA), bairro Guarani.
 - **Nascimento**: 12 de dezembro de 1981.
 - **Formação**: técnico em contabilidade (desde os 16 anos), Direito (formado aos 22 anos), especialista em Direito Tributário e Direito Eleitoral, pós-graduado em Gestão Pública.
-- **Carreira**: procurador municipal desde os 23 anos; mais de 20 anos de advocacia e gestão pública; assessorou/atuou em 47 municípios do interior da Bahia (também referido como "mais de 40 prefeituras" na copy do site — checar qual número usar em cada peça).
+- **Carreira**: procurador municipal desde os 23 anos; mais de 20 anos de advocacia e gestão pública; assessorou mais de 40 prefeituras do interior da Bahia. **Número oficial confirmado pelo usuário em 2026-08-26 — usar sempre "+40 prefeituras", nunca "47 municípios".**
 - **Família**: filho de Maria Celeste (professora/diretora de escola municipal) e de Manoel, conhecido como "Caboclo"/"Caboco" (caçambeiro); um dos quatro irmãos (cresceu entre três irmãos). Casado com Ana, advogada. Pai de três filhos.
 - **Slogan/posicionamento**: "Trabalho que aproxima" · "Conquista merece mais" · "Para mudar Conquista, Conquista merece mais!"
 
@@ -24,7 +24,7 @@ Documento de referência factual para o [agent-copy](../AGENTS/agent-copy.md) (e
 3. **A travessia — Mogi das Cruzes (SP).** Mudou-se para cursar Direito. Trabalhava o dia inteiro em agência bancária e estudava à noite: trem, ônibus e disciplina.
 4. **Aos 22 anos** — formou-se em Direito.
 5. **Aos 23 anos — primeiro compromisso.** Tornou-se procurador municipal; o direito passou a lidar com orçamento, serviço público e gestão real.
-6. **+20 anos de experiência que se move.** Assessorou/atuou em 47 municípios do interior baiano (site usa "+40 prefeituras" na proof-strip), acompanhando de perto gestões que avançam e gestões que precisam mudar.
+6. **+20 anos de experiência que se move.** Assessorou mais de 40 prefeituras do interior baiano, acompanhando de perto gestões que avançam e gestões que precisam mudar.
 7. **A decisão de entrar na política.** Nasceu em Vitória da Conquista, incomodado com problemas da cidade. O ponto de virada foi uma reflexão ouvida durante missa na Catedral Metropolitana Nossa Senhora das Vitórias: se acreditava que era possível fazer diferente, precisava participar.
 8. **2024 — um passo de coragem.** Disputou a Prefeitura de Vitória da Conquista, primeira eleição disputada, e conquistou 6.512 votos. Depois da eleição, continuou atuando na vida pública da cidade: fiscalizando a administração municipal, cobrando soluções, apontando problemas.
 9. **2026 — agora é regional.** Pré-candidato a deputado estadual pelo PDT (número 12999), levando a experiência para fiscalizar, cobrar e representar o Sudoeste da Bahia.
@@ -71,6 +71,5 @@ Ver lista completa e alt texts em [doc-site.md](./doc-site.md#fotos-utilizadas-n
 
 ## O que ainda não está confirmado (não usar em copy sem validar com o usuário)
 
-- Qual número de municípios usar de forma consistente: o site usa tanto "47 municípios" (doc-site.md) quanto "+40 prefeituras" (proof-strip do site) — alinhar com o usuário qual é o número oficial antes de replicar em novas peças.
 - Hashtag oficial de campanha (não informada ainda).
 - Dados de comitê/CNPJ — permanecem como placeholder jurídico, não são copy de marketing.
