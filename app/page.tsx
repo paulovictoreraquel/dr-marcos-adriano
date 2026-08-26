@@ -37,7 +37,7 @@ const images = {
 }
 
 const milestones = [
-  { year: '1980s', title: 'As raízes', text: 'No Guarani, aprendeu cedo que cuidado também é ação. Entre brincadeiras de rua e a rotina simples de casa, ajudava a buscar água no chafariz do bairro.', icon: HeartHandshake, accent: 'yellow' },
+  { year: '1980', title: 'As raízes', text: 'No Guarani, aprendeu cedo que cuidado também é ação. Entre brincadeiras de rua e a rotina simples de casa, ajudava a buscar água no chafariz do bairro.', icon: HeartHandshake, accent: 'yellow' },
   { year: '18 anos', title: 'A travessia', text: 'Mudou-se para Mogi das Cruzes para cursar Direito. Trabalhava o dia inteiro em uma agência bancária e estudava à noite. Trem, ônibus e disciplina.', icon: BriefcaseBusiness, accent: 'green' },
   { year: '23 anos', title: 'Primeiro compromisso', text: 'Tornou-se procurador municipal. A partir dali, o direito encontrou a vida real: orçamento, serviço público e o desafio de fazer a gestão funcionar.', icon: Scale, accent: 'yellow' },
   { year: '+20 anos', title: 'Experiência que se move', text: 'Assessorou mais de 40 prefeituras na Bahia. Viu de perto gestões que avançam e gestões que precisam mudar — sempre com dados e responsabilidade.', icon: Landmark, accent: 'green' },
