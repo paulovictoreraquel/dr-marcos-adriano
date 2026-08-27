@@ -295,7 +295,7 @@ export default function Page() {
           <a className="brand" href="#inicio" aria-label="Ir para o início">
             <Image className="brand-logo" src="/logo/marcos-adriano-branca.png" alt="Dr. Marcos Adriano, deputado estadual 12999" width={899} height={331} sizes="(max-width: 800px) 216px, 272px" priority />
           </a>
-          <button type="button" className="menu-button" onClick={() => setMenuOpen((open) => !open)} aria-expanded={menuOpen} aria-controls="navegacao-principal" aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}>
+          <button type="button" className={menuOpen ? 'menu-button is-open' : 'menu-button'} onClick={() => setMenuOpen((open) => !open)} aria-expanded={menuOpen} aria-controls="navegacao-principal" aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}>
             {menuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
           </button>
           <nav id="navegacao-principal" className={menuOpen ? 'main-nav is-open' : 'main-nav'} aria-label="Navegação principal">
