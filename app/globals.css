@@ -135,7 +135,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
 .stat-index { position: absolute; top: 0.5rem; right: 0.625rem; font-size: 0.625rem; font-weight: 900; }
 
 .story-section { display: grid; grid-template-columns: minmax(0, 0.95fr) minmax(22rem, 1.05fr); align-items: center; gap: clamp(var(--space-6), 7vw, var(--space-12)); overflow: hidden; }
-.story-copy h2, .timeline-heading h2, .priorities-heading h2, .manifesto-copy h2, .faq-heading h2, .support-copy h2, .social-cta-section h2 { font-size: clamp(2.9rem, calc(1.871rem + 5.143vw), 6.5rem); overflow-wrap: break-word; }
+.story-copy h2, .timeline-heading h2, .priorities-heading h2, .manifesto-copy h2, .faq-heading h2, .support-copy h2, .social-cta-section h2 { font-size: clamp(2.9rem, calc(2.614rem + 1.429vw), 3.9rem); overflow-wrap: break-word; }
 .story-copy h2 span, .priorities-heading h2 span, .faq-heading h2 span, .support-copy h2 span { color: var(--green-deep); }
 .story-text { display: grid; gap: var(--space-2); max-width: 40rem; margin-top: var(--space-4); color: var(--muted); line-height: 1.625; text-wrap: pretty; }
 .story-text p { margin: 0; }
@@ -220,7 +220,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
 
 .faq-section { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(22rem, 1.2fr); gap: clamp(var(--space-6), 8vw, var(--space-12)); align-items: start; }
 .faq-heading { position: sticky; top: calc(var(--header-height) + var(--space-4)); min-width: 0; overflow: visible; }
-.faq-heading h2 { font-size: clamp(2.25rem, 4.2vw, 4.5rem); overflow-wrap: break-word; word-break: break-word; }
+.faq-heading h2 { font-size: clamp(2.25rem, 4.2vw, 4.1rem); overflow-wrap: break-word; word-break: break-word; }
 .faq-heading > p:last-child { max-width: 30rem; margin: var(--space-3) 0 0; color: var(--muted); }
 .faq-list { display: grid; }
 .faq-list details { border-top: 1px solid var(--border); }
