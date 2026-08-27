@@ -94,11 +94,13 @@ function useCampaignMotion() {
     let active = true
     let cleanup: () => void = () => {}
 
-    Promise.all([import('gsap'), import('gsap/ScrollTrigger')]).then(([gsapModule, scrollModule]) => {
+    Promise.all([import('gsap'), import('gsap/ScrollTrigger'), import('gsap/Draggable'), import('gsap/InertiaPlugin')]).then(([gsapModule, scrollModule, draggableModule, inertiaModule]) => {
       if (!active) return
       const gsap = gsapModule.gsap
       const ScrollTrigger = scrollModule.ScrollTrigger
-      gsap.registerPlugin(ScrollTrigger)
+      const Draggable = draggableModule.Draggable
+      const InertiaPlugin = inertiaModule.InertiaPlugin
+      gsap.registerPlugin(ScrollTrigger, Draggable, InertiaPlugin)
 
       const context = gsap.context(() => {
         gsap.from('.hero-copy > *', {
@@ -178,6 +180,31 @@ function useCampaignMotion() {
           ease: 'none',
           repeat: -1,
         })
+
+        if (window.matchMedia('(max-width: 800px)').matches) {
+          const track = document.querySelector<HTMLElement>('.gallery-auto-track')
+          if (track) {
+            const groupWidth = track.scrollWidth / 2
+            const wrap = gsap.utils.wrap(-groupWidth, 0)
+            Draggable.create(track, {
+              type: 'x',
+              inertia: true,
+              allowNativeTouchScrolling: true,
+              onPress() {
+                galleryTween.pause()
+                document.documentElement.setAttribute('data-gallery-paused', '')
+                window.dispatchEvent(new CustomEvent('gallery-drag-pause'))
+              },
+              onDrag() {
+                gsap.set(track, { x: wrap(this.x) })
+              },
+              onThrowUpdate() {
+                gsap.set(track, { x: wrap(this.x) })
+              },
+            })
+          }
+        }
+
         const handleGalleryToggle = (event: Event) => galleryTween.paused((event as CustomEvent<{ paused: boolean }>).detail.paused)
         const playGallery = () => {
           if (!document.documentElement.hasAttribute('data-gallery-paused')) galleryTween.play()
@@ -243,6 +270,12 @@ export default function Page() {
   const [galleryPaused, setGalleryPaused] = useState(false)
   useCampaignMotion()
   const showSticky = useStickyCta()
+
+  useEffect(() => {
+    const handleDragPause = () => setGalleryPaused(true)
+    window.addEventListener('gallery-drag-pause', handleDragPause)
+    return () => window.removeEventListener('gallery-drag-pause', handleDragPause)
+  }, [])
 
   const handleGalleryToggle = () => {
     const paused = !galleryPaused
@@ -363,7 +396,7 @@ export default function Page() {
 
         <section className="manifesto-section">
           <div className="manifesto-copy" data-reveal><p className="section-kicker light">06 / compromisso</p><h2>Conquista <span>merece mais.</span></h2><p>Mais planejamento. Mais transparência. Água, saúde e serviços com fiscalização de verdade, não promessa de gabinete.</p><a className="button button-outline" href="#apoie" onClick={() => trackCampaignEvent('cta_click', { location: 'manifesto' })}>Vamos construir <ArrowUpRight aria-hidden="true" /></a></div>
-          <figure className="manifesto-image"><Image src="/images/gallery/marcos-historia-07.webp" alt="Marcos Adriano usando a camisa amarela da campanha 12999" fill sizes="(max-width: 800px) 100vw, 50vw" /><figcaption>Trabalho que aproxima</figcaption></figure>
+          <figure className="manifesto-image"><Image src="/images/gallery/marcos-historia-09.webp" alt="Marcos Adriano com uma criança no colo durante visita a uma comunidade" fill sizes="(max-width: 800px) 100vw, 50vw" /><figcaption>Trabalho que aproxima</figcaption></figure>
         </section>
 
         <section className="faq-section section-wrap" aria-labelledby="faq-title">
