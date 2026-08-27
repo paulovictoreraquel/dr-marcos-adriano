@@ -15,6 +15,7 @@ import {
   Pause,
   Play,
   Scale,
+  Search,
   ShieldCheck,
   Sparkles,
   Stethoscope,
@@ -49,15 +50,14 @@ const gallery = [
   { src: '/images/gallery/marcos-historia-02.webp', alt: 'Retrato antigo da família de Marcos Adriano reunida' },
   { src: '/images/gallery/marcos-historia-04.webp', alt: 'Marcos Adriano ainda criança em retrato de família' },
   { src: '/images/gallery/marcos-historia-05.webp', alt: 'Marcos Adriano em encontro com uma apoiadora' },
-  { src: '/images/gallery/marcos-historia-06.webp', alt: 'Marcos Adriano sentado durante uma conversa' },
   { src: '/images/gallery/marcos-historia-07.webp', alt: 'Marcos Adriano com a camisa amarela da campanha 12999' },
   { src: '/images/gallery/marcos-historia-08.webp', alt: 'Marcos Adriano caminhando durante uma visita à comunidade' },
 ]
 
 const milestones = [
-  { year: '1980', title: 'As raízes', text: 'No Guarani, aprendeu cedo que cuidado também é ação. Entre brincadeiras de rua e a rotina simples de casa, ajudava a buscar água no chafariz do bairro.', icon: HeartHandshake },
+  { year: '1981', title: 'As raízes', text: 'No Guarani, aprendeu cedo que cuidado também é ação. Entre brincadeiras de rua e a rotina simples de casa, ajudava a buscar água no chafariz do bairro.', icon: HeartHandshake },
   { year: '18 anos', title: 'A travessia', text: 'Mudou-se para Mogi das Cruzes para cursar Direito. Trabalhava o dia inteiro em uma agência bancária e estudava à noite. Trem, ônibus e disciplina.', icon: BriefcaseBusiness },
-  { year: '23 anos', title: 'Primeiro compromisso', text: 'Tornou-se procurador municipal. A partir dali, o direito encontrou a vida real: orçamento, serviço público e o desafio de fazer a gestão funcionar.', icon: Scale },
+  { year: '2004', title: 'Primeiro compromisso', text: 'Tornou-se procurador municipal. A partir dali, o direito encontrou a vida real: orçamento, serviço público e o desafio de fazer a gestão funcionar.', icon: Scale },
   { year: '+20 anos', title: 'Experiência que se move', text: 'Assessorou mais de 40 prefeituras na Bahia. Viu de perto gestões que avançam e gestões que precisam mudar, sempre com dados e responsabilidade.', icon: Landmark },
   { year: '2024', title: 'Um passo de coragem', text: 'Disputou a Prefeitura de Vitória da Conquista. A campanha aproximou ainda mais Marcos das ruas, das histórias e das urgências da sua cidade.', icon: Sparkles },
   { year: '2026', title: 'Agora é regional', text: 'Como pré-candidato a deputado estadual pelo PDT, leva sua experiência para fiscalizar, cobrar e construir resultados para o Sudoeste.', icon: ShieldCheck },
@@ -67,12 +67,13 @@ const priorities = [
   { title: 'Água', text: 'Cobrar para que a água de qualidade chegue com regularidade a todos os municípios.', icon: Droplets },
   { title: 'Saúde', text: 'Fiscalizar a saúde pública e buscar incentivos para ampliar o atendimento.', icon: Stethoscope },
   { title: 'Serviços', text: 'Acompanhar de perto a Embasa e exigir respeito à população.', icon: ShieldCheck },
+  { title: 'Fiscalização', text: 'Controle e combate à corrupção, fiscalizando contas públicas do orçamento à execução, do município ao governo do estado.', icon: Search },
 ]
 
 const faqs = [
   { question: 'Quem é Marcos Adriano?', answer: 'Marcos Adriano é advogado, técnico contábil e ex-procurador municipal. Sua trajetória reúne mais de 20 anos de experiência em gestão pública na Bahia.' },
   { question: 'Qual cargo Marcos Adriano pretende disputar?', answer: 'Marcos Adriano é pré-candidato a deputado estadual pelo PDT na Bahia, com atuação voltada especialmente para Vitória da Conquista e o Sudoeste baiano.' },
-  { question: 'Quais são as prioridades apresentadas?', answer: 'As prioridades apresentadas são água, saúde e qualidade dos serviços públicos. A proposta enfatiza fiscalização, cobrança e representação responsável no mandato estadual.' },
+  { question: 'Quais são as prioridades apresentadas?', answer: 'As prioridades apresentadas são água, saúde, qualidade dos serviços públicos e fiscalização das contas públicas. A proposta enfatiza controle, combate à corrupção, cobrança e representação responsável no mandato estadual.' },
   { question: 'Qual é a experiência de Marcos Adriano?', answer: 'Marcos Adriano atuou como procurador municipal e assessorou mais de 40 prefeituras. Essa experiência reúne direito, contabilidade e acompanhamento direto da administração pública.' },
   { question: 'Como acompanhar a agenda de Marcos Adriano?', answer: 'A agenda, as ideias e os bastidores da caminhada podem ser acompanhados pelos perfis oficiais de Marcos Adriano no Instagram e no Facebook.' },
 ]
@@ -361,7 +362,7 @@ export default function Page() {
         <section className="gallery-section" aria-labelledby="gallery-title">
           <div className="gallery-header section-wrap" data-reveal>
             <div><p className="section-kicker light">02 / memórias e presença</p><h2 id="gallery-title">Uma vida <span>perto de gente.</span></h2><p>Da história de família aos encontros de hoje: registros de uma caminhada construída com presença.</p></div>
-            <div className="gallery-controls"><span>07 fotografias</span><button type="button" onClick={handleGalleryToggle} aria-label={galleryPaused ? 'Continuar reprodução automática' : 'Pausar reprodução automática'}>{galleryPaused ? <Play aria-hidden="true" /> : <Pause aria-hidden="true" />}</button></div>
+            <div className="gallery-controls"><span>06 fotografias</span><button type="button" onClick={handleGalleryToggle} aria-label={galleryPaused ? 'Continuar reprodução automática' : 'Pausar reprodução automática'}>{galleryPaused ? <Play aria-hidden="true" /> : <Pause aria-hidden="true" />}</button></div>
           </div>
           <div className="gallery-viewport" aria-label="Galeria automática de fotografias de Marcos Adriano">
             <div className="gallery-auto-track">

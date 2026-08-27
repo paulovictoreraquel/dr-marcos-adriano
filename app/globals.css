@@ -200,7 +200,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
 
 .priorities-heading { display: grid; grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.55fr); align-items: end; gap: clamp(var(--space-4), 6vw, var(--space-10)); overflow: hidden; }
 .priorities-heading > p { margin: 0; color: var(--muted); line-height: 1.6; }
-.priority-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); margin-top: var(--space-10); }
+.priority-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-3); margin-top: var(--space-10); }
 .priority-card { display: flex; flex-direction: column; justify-content: space-between; min-height: 22rem; padding: var(--space-4); border-top: 0.375rem solid var(--green); background: var(--white); transition: transform 160ms ease-out, box-shadow 160ms ease-out; }
 .priority-card:hover { transform: translateY(-0.25rem); box-shadow: 0 1.5rem 4rem rgb(4 24 59 / 18%); }
 .priority-card-top { display: flex; align-items: start; justify-content: space-between; }
@@ -293,7 +293,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
   .main-nav a { font-size: 0.75rem; }
   .hero-section { grid-template-columns: minmax(0, 1fr) minmax(22rem, 1fr); }
   .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .priority-grid { gap: var(--space-2); }
+  .priority-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-2); }
 }
 
 @media (max-width: 50rem) {
